@@ -1,7 +1,7 @@
 <%= render 'osm_object' %>
 <h1><%= t'.h1' %>.</h1>
 <div class="osm_shadow_list">
-  <% @osm_shadows.each do | @osm_shadow | %>
+  <% @osm_shadows.each do | osm_shadow | @osm_shadow=osm_shadow | %>
   <div class="osm_shadow_list_item">
       <%
         @taghash = {}
